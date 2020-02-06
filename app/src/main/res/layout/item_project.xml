@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="1dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:id="@+id/card_item">
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#49000000" />
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/label_nama"
+            android:text="Nama :\t"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/id_nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/label_nama"
+                android:layout_alignBottom="@id/label_nama"
+                android:text="@string/s_nama"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/label_deskripsi"
+            android:text="Deskripsi :\t"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/label_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/id_deskripsi"
+                android:text="@string/s_deskripsi"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/label_deskripsi"
+                android:layout_alignBottom="@id/label_deskripsi"/>
+
+        <TextView
+            android:id="@+id/label_tanggal_mulai"
+            android:text="Tanggal Mulai :\t"
+            android:layout_below="@id/label_deskripsi"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/id_tanggal_mulai"
+                android:text="@string/s_tanggal_mulai"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/label_tanggal_mulai"
+                android:layout_alignBottom="@id/label_tanggal_mulai"/>
+
+        <TextView
+            android:id="@+id/label_tanggal_akhir"
+            android:text="Tanggal Akhir :\t"
+            android:layout_below="@id/label_tanggal_mulai"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+                android:id="@+id/id_tanggal_akhir"
+                android:text="@string/s_tanggal_akhir"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/label_tanggal_akhir"
+                android:layout_alignBottom="@id/label_tanggal_akhir"/>
+
+        <TextView
+            android:id="@+id/label_jumlah_sprint"
+            android:text="Jumlah Sprint :\t"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/label_tanggal_akhir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/id_jumlah_sprint"
+                android:text="@string/s_jumlah_sprint"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/label_jumlah_sprint"
+                android:layout_alignBottom="@id/label_jumlah_sprint"/>
+
+        <TextView
+            android:id="@+id/label_budget"
+            android:text="Budget :\t"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/label_jumlah_sprint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/id_budget"
+                android:text="@string/s_budget"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/label_budget"
+                android:layout_alignBottom="@id/label_budget"/>
+
+        <TextView
+            android:id="@+id/label_status"
+            android:text="Status :\t"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/label_budget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+                android:id="@+id/id_status"
+                android:text="@string/s_status"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/label_status"
+                android:layout_alignBottom="@id/label_status"/>
+
+        <TextView
+            android:id="@+id/label_persen"
+            android:text="Persen :\t"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/label_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/id_persen"
+                android:text="@string/s_persen"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/label_persen"
+                android:layout_alignBottom="@id/label_persen"/>
+
+        <TextView
+            android:id="@+id/label_semester_id"
+            android:text="Semester :\t"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/label_persen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/id_semester_id"
+                android:text="@string/s_semester_id"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/label_semester_id"
+                android:layout_alignBottom="@id/label_semester_id"/>
+
+        <TextView
+            android:id="@+id/label_scrummaster_id"
+            android:text="Scrummaster :\t"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/label_semester_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/id_scrummaster_id"
+                android:text="@string/s_scrummaster_id"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/label_scrummaster_id"
+                android:layout_alignBottom="@id/label_scrummaster_id"/>
+
+        <TextView
+            android:id="@+id/label_tim_id"
+            android:text="Tim :\t"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/label_scrummaster_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/id_tim_id"
+                android:text="@string/s_tim_id"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/label_tim_id"
+                android:layout_alignBottom="@id/label_tim_id"/>
+
+        <TextView
+            android:id="@+id/label_created_by"
+            android:text="Created By :\t"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/label_tim_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/id_created_by"
+                android:text="@string/s_created_by"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/label_created_by"
+                android:layout_alignBottom="@id/label_created_by"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

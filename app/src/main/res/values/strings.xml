@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">limakel3</string>
+    <string name="s_save">save</string>
+    <string name="s_delete">Delete</string>
+    <string name="s_update">Update</string>
+    <string name="s_edit">Edit</string>
+
+    <string name="s_nama">Nama</string>
+    <string name="s_deskripsi">Deskripsi</string>
+    <string name="s_tanggal_mulai">Tanggal Mulai</string>
+    <string name="s_tanggal_akhir">Tanggal Akhir</string>
+    <string name="s_jumlah_sprint">Jumlah Sprint</string>
+    <string name="s_budget">Budget</string>
+    <string name="s_status">Status</string>
+    <string name="s_persen">Persen</string>
+    <string name="s_semester_id">Semester</string>
+    <string name="s_scrummaster_id">Scrummaster</string>
+    <string name="s_tim_id">Tim</string>
+    <string name="s_created_by">Created By</string>
+</resources>
